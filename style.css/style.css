@@ -56,6 +56,16 @@ color: black;
 #apresentação a:hover{
   color: black;
 }
+
+
+#arrow {
+  font-size: 40px;
+  width: 90px;
+  margin-left: 78px;
+  margin-top: 450px;
+    color:  #D4AF37;
+}
+
 #galeria{
   text-align: center;
   margin-bottom: 20px;
@@ -160,9 +170,21 @@ font-weight: 300;
 
 }
 
-/* animação */
+/* animação  ARROW*/
 
 
+.animar{
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: animar 1.5s infinite;
+}
+
+@keyframes animar {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 
 
