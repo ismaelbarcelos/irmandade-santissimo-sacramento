@@ -26,3 +26,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+
+
+// movimentos 
+
+
+const elementos = document.querySelectorAll('.animar')
+
+function animarScroll() {
+  const topoTela = window.innerHeight * 0.85
+
+  elementos.forEach(el => {
+    const distancia = el.getBoundingClientRect().top
+    if (distancia < topoTela) {
+      el.classList.add('ativo')
+    }
+  })
+}
+
+window.addEventListener('scroll', animarScroll)
+animarScroll()
+
+
+
+

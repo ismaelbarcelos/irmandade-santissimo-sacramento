@@ -36,28 +36,55 @@
   margin-bottom: 25px;
   font-family: 'Times New Roman', Times, serif;
 }
+
 #apresentação button{
   border:1px solid  #D4AF37;
   align-self: center;
   border-radius: 0px;
   display: flex;
 }
-a{
-  text-decoration: none;
-    color:  #D4AF37;
-}
-a:hover{
-  color: black;
-}
+
 #apresentação button:hover{
 background:#D4AF37;
 color: black;
 }
 
+#apresentação a{
+  text-decoration: none;
+    color:  #D4AF37;
+}
+#apresentação a:hover{
+  color: black;
+}
+#galeria{
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 4rem;
+}
+.btngaleria{
+  border:1px solid  #D4AF37;
+  align-self: center;
+  border-radius: 0px; 
+}
+ .btn:hover{
+   background:#D4AF37;
+   color: black;
+}
+.btn a{
+  text-decoration: none;
+  color:#D4AF37;
+
+}
+.btn a:hover{
+  color:black;
+}
+
+
 .palavras{
 font-size: 1rem;
 font-weight: 300;
- color:  #D4AF37;
+ color: #D4AF37;
 }
 .sacramento{
   font-size: 4rem;
@@ -130,7 +157,21 @@ font-weight: 300;
  box-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.836);
  border-radius: 3px;
  padding: 20px;
+
 }
+
+/* animação */
+
+
+
+
+
+
+/* animação */
+
+
+
+
 i{
   color:#994705 ;
 }
