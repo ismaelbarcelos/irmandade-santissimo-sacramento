@@ -1,0 +1,29 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.photo {
+  flex: 1 1 200px; /* Ajusta a largura mínima das fotos */
+  margin: 10px;
+}
+
+.photo img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

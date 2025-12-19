@@ -1,0 +1,208 @@
+ *{
+  margin: 0;
+  padding: 0;
+ }
+ body{
+  background-color: rgb(246, 246, 246);
+}
+#main{
+  
+  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(/imagem/jesus-no-santissimo-sacramento.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+/* menu */
+
+ /* fim menu */
+
+
+/* apresentação */
+#apresentação{
+  
+  margin: 1px 1px 0px 1px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+#apresentação{
+  
+  align-self: flex-end;
+}
+#apresentação h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+#apresentação button{
+  border:1px solid  #D4AF37;
+  align-self: center;
+  border-radius: 0px;
+  display: flex;
+}
+a{
+  text-decoration: none;
+    color:  #D4AF37;
+}
+a:hover{
+  color: black;
+}
+#apresentação button:hover{
+background:#D4AF37;
+color: black;
+}
+
+.palavras{
+font-size: 1rem;
+font-weight: 300;
+ color:  #D4AF37;
+}
+.sacramento{
+  font-size: 4rem;
+   color:  #D4AF37;
+}
+.Airmandade{
+  font-size: 4em;
+  color: white;
+}
+#apresentação p {
+  text-align: center;
+  color: white;
+  margin-top: 25px;
+  font-size: 1rem;
+}
+#sectionSobre{
+  
+  margin-top: 150px;
+  text-align: center;
+  
+}
+#nossa{
+  color:#994705;
+  font-weight:250;
+  margin-bottom: 25px;
+
+}
+#sobre{
+  color: black;
+  font-weight:450;
+}
+#paroquia{
+  color:#994705;
+  font-weight: 450;
+  margin-bottom: 20px;
+}
+.traço{
+  color:#994705;
+  margin-bottom: 150px;
+}
+
+
+
+.igreja img{
+  margin-bottom: 15px;
+}
+
+
+/* a eucaristia mesagem*/ 
+
+.mensagem{
+  border-left: 3px solid #994705;
+  background: rgba(240, 238, 238, 0.795);
+ margin-bottom: 25px;
+}
+
+
+/*fim eucaristia mesagem*/ 
+
+/*quadros*/
+#quadros{
+
+  margin-top: 130px;
+}
+
+.cards {
+  border: 1px solid rgb(151, 150, 150);
+ margin: 10px;
+ background: rgb(241, 241, 241);
+ box-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.836);
+ border-radius: 3px;
+ padding: 20px;
+}
+i{
+  color:#994705 ;
+}
+
+.cards i {
+  font-size: 35px;
+  background: #dfd3ae;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+#fotos{
+  margin-top: 150px;
+  margin-bottom: 50px;
+  background: #f0f0f0;
+}
+#fotos img{
+  width: 100%;
+  margin: 8px;
+}
+
+
+
+
+
+
+/* fim apresentação */
+
+
+
+
+
+
+
+
+/* rodape */
+footer{
+  background-color: darkgray;
+}
+/* fim rodape */
+ 
+
+
+
+/* media queres (Igreja - Fotos */ 
+@media (max-width:650px) and (min-width:460px){
+  #texto-section p{
+    width: 450px;
+
+  }
+  .Igreja{
+    margin-top: 1px;
+  }
+}
+@media(min-width:868px){
+ #texto-section p{
+  width: 900px;
+ }
+ .Igreja{
+  margin-top: 1px;
+}
+}
+@media (max-width:650px){
+  
+  .Igreja{
+    margin-top: 1px;
+    width: 560px;
+    height: 300px;
+   
+  }
+}
+/*FIM media queres (Igreja - Fotos */ 
+
+
+
