@@ -148,7 +148,7 @@ font-weight: 300;
 
 .mensagem{
   border-left: 3px solid #994705;
-  background: rgba(240, 238, 238, 0.795);
+  background: rgba(248, 247, 247, 0.795);
  margin-bottom: 25px;
 }
 
@@ -164,12 +164,13 @@ font-weight: 300;
 .cards {
   border: 1px solid rgb(151, 150, 150);
  margin: 10px;
- background: rgb(241, 241, 241);
- box-shadow: 0px 0px 1px  rgba(0, 0, 0, 0.836);
+ background: rgb(250, 249, 249);
+ box-shadow: 0px 0px 2px  rgba(0, 0, 0, 0.836);
  border-radius: 3px;
  padding: 20px;
 
 }
+
 
 /* animação  ARROW*/
 
@@ -232,8 +233,73 @@ i{
 
 /* rodape */
 footer{
-  background-color: darkgray;
+
+  background-color: #1a1a1a;
 }
+
+footer img{
+  
+  margin: 35px;
+  height: 70px;
+  max-width: 70px;
+  border-radius: 50%;
+}
+
+#logo{
+  display: flex;
+ 
+}
+#Irmandade{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+}
+.Santissimo{
+  font-family: 'Times New Roman', Times, serif;
+  color: #D4AF37;
+}
+#footerh2{
+  margin-top: 36px;
+}
+#footerpara{
+  margin-left: 15px;
+  color:rgb(216, 213, 213);
+}
+
+.h2footer{
+  margin-left: 15px;
+  margin-top: 35px;
+  color: #D4AF37;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.4rem;
+}
+
+.nav-link{
+   color: rgb(216, 213, 213);
+   font-size: 1.1rem;
+}
+
+#menufooter :hover{
+  color: white;
+}
+
+.insta{
+  font-size: 35px;
+  margin-left: 15px;
+  border-radius: 50%;
+  color:rgb(216, 213, 213);
+}
+
+
+ footer a :hover{
+  color: #D4AF37;
+}
+
+#direitos{
+  text-align: center;
+  color: rgb(216, 213, 213);
+}
+
+
 /* fim rodape */
  
 
