@@ -1,9 +1,45 @@
 
 
+#reader_oracoes{
+ /* bsackground: #966237;*/
+ background: #1F2A44
+;
+}
 
+.oracoes{
+  margin-top: -60px;
+ font-size: 3.5rem;
+font-weight: 300;
+ color: #FFFFFF
+;
+}
+.Ao{
+   font-size: 3.5rem;
+font-weight: 300;
+ color: #FFFFFF
+; 
+}
+.sacramento{
+  font-size: 5rem;
+font-weight: 300;
+ color: #D4AF37; 
+}
+
+
+#reader_oracoes img{
+ margin: 35px;
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+}
+
+#reader_oracoes a:hover{
+color: rgb(109, 106, 106);
+
+}
 
 #section1{
-  background-color: rgba(250, 246, 240, 0.994);
+  bsackground-color: rgba(250, 246, 240, 0.994);
   
 display: flex;
 flex-direction: column;

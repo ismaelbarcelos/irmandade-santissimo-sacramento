@@ -1,51 +1,40 @@
-let slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  let i;
-  let slides = document.getElementsByClassName("mySlides");
-  let dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
 
 
-// movimentos 
 
 
-const elementos = document.querySelectorAll('.animar')
 
-function animarScroll() {
-  const topoTela = window.innerHeight * 0.85
 
-  elementos.forEach(el => {
-    const distancia = el.getBoundingClientRect().top
-    if (distancia < topoTela) {
-      el.classList.add('ativo')
-    }
-  })
-}
 
-window.addEventListener('scroll', animarScroll)
-animarScroll()
+document.addEventListener("DOMContentLoaded", function () {
+
+  const botoes = document.querySelectorAll(".menu button");
+  const fotos = document.querySelectorAll(".foto");
+
+  botoes.forEach(botao => {
+    botao.addEventListener("click", () => {
+
+      /* remove ativo de todos */
+      botoes.forEach(b => b.classList.remove("ativo"));
+
+      /* adiciona ativo no clicado */
+      botao.classList.add("ativo");
+
+      const filtro = botao.dataset.filter;
+
+      fotos.forEach(foto => {
+        if (filtro === "all" || foto.classList.contains(filtro)) {
+          foto.style.display = "block";
+        } else {
+          foto.style.display = "none";
+        }
+      });
+
+    });
+  });
+
+});
+
+
 
 
 

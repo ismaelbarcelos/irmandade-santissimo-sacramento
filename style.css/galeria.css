@@ -2,28 +2,53 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+ 
 }
 
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
+#fotos{
+  margin-top: 100px;
+  margin-bottom: 50px;
+  background: #f0f0f0;
 }
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-}
-
-.photo {
-  flex: 1 1 200px; /* Ajusta a largura mínima das fotos */
-  margin: 10px;
-}
-
-.photo img {
+#fotos img{
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  margin: 8px;
+  border-radius: 3px;
+  box-shadow: 0px 0px 2px black;
+}
+#fotos img:hover{
+  
+  box-shadow: 0px 0px 4px rgb(243, 240, 240);
+  padding: 1px;
+}
+
+.menu{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
+button{
+  border:1px solid;
+  border-radius:3px;
+  margin: 4px;
+  padding: 4px;
+  background:rgb(138, 135, 135) ;
+  color: #f0f0f0;
+}
+
+button:hover{
+  box-shadow: 0px 0px 4px black;
+  border:black;
+}
+
+.menu button.ativo {
+  background: #1F2A44;   /* azul Bootstrap */
+  color: #fff;
+  font-weight: bold;
+}
+
+h4{
+  margin-top: 7px;
 }
