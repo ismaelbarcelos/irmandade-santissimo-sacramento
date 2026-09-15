@@ -35,7 +35,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// mudar background click
 
+const botao = document.getElementById("botaoMenu"); 
+const navBackground = document
+.getElementById("nav_group");
+
+
+let backAtivo;
+botao.addEventListener('click',function(){
+
+if(backAtivo){
+ navBackground.style.backgroundColor = '#fbfbfb2f';
+  backAtivo = false;
+}else if(!backAtivo){
+   navBackground.style.backgroundColor = '#ffffff';
+   backAtivo = true;
+}
+
+
+
+})
 
 
 

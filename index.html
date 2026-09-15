@@ -11,6 +11,10 @@
     <link rel="stylesheet" type="text/css" href="./js/script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+ <!--configs do menu-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 <script src="https://kit.fontawesome.com/7454a8b3ff.js" crossorigin="anonymous"></script>
 
@@ -21,22 +25,30 @@
 <script>
   AOS.init()
 </script>
-
-
-
-   
-
   </head>
+
   <body>
-    <section id="main">
-     <header>
-     
+
+      <div id="hero_content">
+        
+     <header id="nav_group">
+
       <nav class="navbar navbar-expand-lg  navbar-dark ">
-  <div class="container">
 
-    
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <div id="area_logo">
+           <img id="logo_img" src="imagem/logo/logo_melhor.png" alt="">
+           <div>
+             <p>Irmandade do <br>Santíssimo Sacramento <br>Granja - Ceará </p>
+             <p></p>
+           <p></p>
+           </div>
+          
+        </div>
+
+  <div class="container-fluid hamburguer_menu">
+
+    <button id="botaoMenu" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -61,37 +73,80 @@
           <a class="nav-link" href="#">Contato</a>
         </li>
       </ul>
+      <img id="cross_logo" src="imagem/logo/crosslogo.png" alt="">
     </div>
 
   </div>
+   
 </nav>
-
-
-    
 
      </header>
 
-     <aside data-aos="fade-up" data-aos-duration="1500" class="container m-auto d-flex justify-content-center align-items-center " id="apresentação">
+       <div id="main">
+        
+           <img src="imagem/santissimo/santissimo3.jpeg
+        " alt="">
+       
+       
+       
+     <div id="apresentação">
 
-      <div> 
-      <h2 data-aos="fade-up" data-aos-duration="1900" class="palavras ">FÉ - DEVOÇÃO - TRADIÇÃO </h2>
-      <h2 class="Airmandade "> Irmandade do</h2>
-      <h2 class="sacramento ">Santíssimo Sacramento</h2>
-      <p>"Louvado seja para sempre o Santísso Sacramento do Altar"</p>
+      <div id="apresentação_textos" data-aos="fade-up" data-aos-duration="1500"> 
+      
+      <h2 class="Airmandade cor_vinho"> Irmandade do</h2>
+      <h2 class="sacramento Santissimo_margin">Santíssimo</h2>
+       <h2 class="sacramento sacramento_margin">Sacramento</h2>
 
-      <button data-aos="fade-up" data-aos-duration="1900" class="btn  m-auto conhecer "><a href="#sectionSobre">CONHECER NOSSA HISTÓRIA</a> </button>
-      </div>
+       <div class="palavras_linhas"> 
+        <span class="traço_grande"></span>
+        <span class="icon_meio">◆</span>
+        <span class="traço_grande"></span>
+        </div>
 
-      <i id="arrow" class="fa-solid fa-angle-down animar"></i>
-     </aside>
+       <div style="margin-top: -90px;">
+        <p style="font-size: 1.2rem; font-weight: 400;">IGREJA MATRIZ DE SÃO JOSÉ</p>
+        <P style="font-size:1.3rem ;font-weight: 400; color: #D4AF37 ; margin-bottom: 20px; margin-top: -10px;">GRANJA - CE</P>
+       </div>
 
+       <div style="margin-top: -40px;" class="palavras_linhas">
+         <span class="traço_fe"></span>
+        <p class="palavra ">FÉ</p>
+        <span class="icon_fe">◆</span>
+         <p  class="palavra ">DEVOÇÃO </p>
+          <span class="icon_fe">◆</span>
+             <p  class="palavra ">TRADIÇÃO </p>
+              <span class="traço_fe"></span>
+
+       </div>
+       <p style="margin:6px ; font-size: 1.2rem;">"Louvado seja para sempre o Santísso Sacramento do Altar"</p>
      
 
-      </section>
+      <button data-aos="fade-up" data-aos-duration="1900" class="btn  m-auto ">
+        <a href="#Ancorasobre">CONHEÇA NOSSA HISTÓRIA</a> 
+        <i style="margin: 5px; color: white;" class="fa-solid fa-chevron-right"></i>
+      </button>
+      </div>
 
-    
+    </div>
+</div>  
+     
+</div>
+
+<div class="onda">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path
+      fill="#D4AF37"
+      d="M0,64L80,74.7C160,85,320,107,480,106.7C640,107,800,85,960,74.7C1120,64,1280,64,1360,64L1440,64L1440,120L0,120Z">
+    </path>
+  </svg>
+</div>
+<div id="border_onda"></div>
+      
+
+    <!--Nossa  Historia 
 
       <section data-aos="fade-up" data-aos-duration="1300" class="" id="sectionSobre">
+
         <aside class="container m-auto d-flex justify-content-center align-items-center ">
 
       <div> 
@@ -102,72 +157,197 @@
       </div>
      </aside>
       </section>
+-->
+   
 
 
+     <section  id="Ancorasobre" >
 
+    
 
-     <section id="Ancorasobre" class="container" >
-      <div class="row">
+      <div  id="card_linha_do_tempo" data-aos="fade-up" data-aos-duration="1900" >
        
-        <div data-aos="fade-right" data-aos-duration="1300" class="col-md-6 ">
-
-        <div>
-          <p>A primitiva matriz da Macaboqueira ou Macavoqueira ( atual Granja), cujo orago é São José, era acanhado e exíguo templo; Thomaz Pompeu de Sousa Brasil (Ensaio estatístico da Província do Ceará, São Luíz,Typographia de B.de Mattos, 1864, tomo II, p.230) e Antônio Bezerra (Notas de viagem, cit.,p.53) Afirmam que em 8 de Setembro de 1759 foi começada sua edificação.</p>
-        </div>
-
-        <div>
-          <p>Entretanto a razão parece estar com o Pe. Vicente Martins (“Notícia Histórico – Chorographica da Comarca de Granja”, in Revista do Instituto do Ceará, Fortaleza, 1915, tomo XXIX, p.5), quando assevera que no dia 8 de Setembro de 1759 inaugurou-se a pequena matriz e no dia seguinte foi criada e instalada a Confraria ou Irmandade do Santíssimo Sacramento(para saber mais sobre a historia Clique aqui), pois que o ilustre eclesiástico transcreve um documento intitulado Aotto e Translado do Termo que fizeram da Primeira Eleição, de 9 de Setembro de 1759, pela leitura do qual vê-se que nessa data o templo já se achava edificado.</p>
-        </div>
-
-        <div>
-          <p>Unidos pelo mesmo ideal de amor a Jesus Sacramentado, nossos irmãos se empenham em servir a Igreja e a comunidade, seguindo o exemplo de tantos santos que dedicaram suas vidas à Eucaristia.</p>
-        </div>
-        
-
-        <!-- mensagem eucaristia -->
-
-        <section class="container mt-5 mensagem">
-<div class="row">
-
-  <p>"A Eucaristia é o coração e o ápice da vida da Igreja"</p>
-  <p>- Catescismo da Igreja Católica</p>
-
-</div>
-</section>
-       
+<h2 style="color: #2b0d0d; text-align: center;">LINHA DO TEMPO</h2>
+        <div class="linha_do_tempo">
+           
+             <span class="traço_historia"></span>
+          <span class="icon_meio">◆</span>
+          <span class="traço_historia"></span>
           </div>
 
+      <section class="timeline">
 
         
-<section data-aos="fade-left" data-aos-duration="1300" class="col-md-6 "> 
 
-  <div class="row igreja">
-          
-          <img src="imagem/Igreja São José - Granja.webp" alt="">
-        
-          <img class="Igreja" src="imagem/Paroquia-Sao-Jose-Granja2.jpg" alt="">
+    
+       
+  <div class="evento">
+     <div class="ponto"></div>
+    <img src="imagem/historia_logos/chapel.png" alt="">
+    <p class="ano">1759</p>
+    <p class="resumo">Fundação da Irmandade
+    <br>09 de setembro</p>
+ </div>
 
-        
-        </div>
+
+
+  <div class="evento">
+     <div class="ponto"></div>
+    <img src="imagem/historia_logos/letter.png" alt="">
+    <p class="ano">1854</p>
+      <p class="resumo">Aprovação do Compromisso<br>
+      Lei n° 691, de 29 de outubro</p>
+ </div>
+
+
+
+  <div class="evento">
+     <div class="ponto"></div>
+    <img src="imagem/historia_logos/group.png" alt="">
+    <p class="ano">1917</p>
+      <p class="resumo">Aprovação do novo Compromisso<br>
+      e reorganização da Irmandade <br>
+      08 de dezembro</p>
+ </div>
+
+ 
+
+   <div class="evento">
+     <div class="ponto"></div>
+    <img src="imagem/historia_logos/open-book.png" alt="">
+    <p class="ano">1944</p>
+      <p class="resumo">Reforma do Compromisso<br>Decreto 147 do Concilio Plenário<br> Brasileiro, aprovado em 20 de maio</p>
+ </div>
+
+
+
+  <div class="evento">
+     <div class="ponto"></div>
+    <img  src="imagem/historia_logos/eucharist.png" alt="">
+    <p class="ano">HOJE</p>
+      <p class="resumo">Continuidade da missão e da<br>devoção ao Santíssimo Sacramento</p>
+ </div>
+</section>
+</div>
+</div>
+
 </section>
 
-         </div>
+
+<div class="onda">
+  <svg viewBox="0 0 1440 120" preserveAspectRatio="none">
+    <path
+      fill="#D4AF37"
+      d="M0,64L80,74.7C160,85,320,107,480,106.7C640,107,800,85,960,74.7C1120,64,1280,64,1360,64L1440,64L1440,120L0,120Z">
+    </path>
+  </svg>
+</div>
+
+
+
+<section style="background-color: #f5f0e6;"> 
+
+ <div class="container" id="nossa_historia" >
+
+ <div data-aos="fade-up" data-aos-duration="1600"> 
+  <h2 style="color: #2b0d0d; text-align: center;">NOSSA HISTÓRIA</h2>
+
+     <div style="display: flex;justify-content: center;" class="linhas_historia">
+           
+             <span class="traço_historia"></span>
+          <span class="icon_meio">◆</span>
+          <span class="traço_historia"></span>
+          </div>
+</div>
+        <div class="row">
+        
+          <div data-aos="fade-right" data-aos-duration="1600"
+          
+          class="col-md-4" id="igreja_antiga">
+          <img class="img-fluid" src="imagem/Igreja-São-José-Granja.jpg" alt="">
+          <img class="img-fluid" src="imagem/Paroquia-Sao-Jose-Granja2.jpg" alt="">
+        </div>
+
+        <div class="col-md-6">
+
+          
+
+       
+
+          <div id="texto_historia" data-aos="fade-left" data-aos-duration="1600"  >
+            <p>
+              A Irmandade do Santíssimo Sacramento da Igreja Matriz de São José, em Granja, possui uma tradição centenária dedicada ao culto e à adoração de Nosso Senhor Jesus Cristo presente na Eucaristia.
+            </p>
+
+            <p>
+              Sua fundação ocorreu em 9 de setembro de 1759, na então Igreja Matriz de São José da Macaboqueira, sendo uma das mais antigas associações religiosas da região. Os primeiros registros documentam a eleição de seus dirigentes e a organização dos irmãos para promover a honra e o louvor ao Santíssimo Sacramento
+            </p>
+
+            <p>
+              Ao longo de sua história, a irmandade teve seu compromisso aprovado pela Lei nº 691, de 29 de outubro de 1854. Posteriormente, foi reorganizada em 8 de dezembro de 1917 e teve seu compromisso reformado em 1944, adaptando-se às orientações da Igreja e preservando sua missão original.
+            </p>
+
+
+            <p>
+              Até os dias atuais, a irmandade continua promovendo a devoção à Divina Eucaristia e contribuindo para a vida religiosa da Paróquia de São José de Granja.
+            </p>
+
+             <button>Ler mais</button>
+          </div>
+         
+
+        </div>
+          
       </div>
-     </section>
+
+          </div>
+
+</section>
 
 
+<!-- Nossa Missão-->
 
+<section id="nossa_missao"> 
 
+  <div id="nossa_missaoIMG">
+  <img src="imagem/santissimo/nossamissao.png" alt="">
+ </div>
+  <div id="missao_conteudo"> 
+    <h2 >NOSSA MISSÃO</h2>
 
+     <div style="display: flex;justify-content:center;" class="linhas_historia">
+           
+             <span class="traço_historia"></span>
+          <span class="icon_meio">◆</span>
+          <span class="traço_historia"></span>
 
+        
+          </div>
 
+            <div id="missao_frase">
+           
+          <p> <span ><i class="fa-solid fa-quote-left aspas_grande"></i> </span>Promover a piedade e a devoção à Divina Eucaristia e manter com máxima decência o seu culto.</p>
+          <p>Preservar a tradição da irmandade.</p>
+          <p> Servir à Igreja e à comunidade.</p>
+          <p> Fortalecer a fé dos irmãos.</p>
+
+          </div>
+          
+</div>
+         
+</section>
+
+<!-- Fim Nossa Missão-->
+
+<!--Cards-->
 <section data-aos="fade-up" data-aos-duration="1200" class="container-fluid " id="quadros">
 
   <div class="container-fluid ">
   <div class="row justify-content-center g-5">
     <div class="col-md-3 cards ">
       <div class=" pt-4 text-center">
-        <i class="fa-solid fa-heart"></i>
+      
+        <img  src="imagem/historia_logos/eucharist.png" alt="">
         <h3>
           Devoção Eucarística
         </h3>
@@ -185,7 +365,9 @@
       <div class=" pt-4 text-center">
         <i class="fa-solid fa-church"></i>
         <h3>Tradição</h3>
-        <p>Preservar e transmitir as tradições seculares da Igreja Católica.</p>
+        <p>Profissão de fé que resume as verdades fundamentais da Igreja.</p>
+        
+</p>
       </div>
     </div>
     
@@ -194,6 +376,8 @@
 
 
 </section>
+
+<!--fim Cards-->
 
 <!--/* memorias e galeria */ --> 
 
@@ -249,88 +433,6 @@
 
 </section>
 
-
-
-
-
-
-        <!-- Slideshow container 
-         <section id="section-slide">
-        <div class="slideshow-container">
-
-          
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
-            <img src="imagem/imagem5.jpg" style="width:100%">
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">1 / 4</div>
-            <img src="./imagem/imagem1.jpg" style="width:100%">
-            <div class="text"></div>
-          </div>
-          
-          <div class="mySlides fade">
-            <div class="numbertext">2 / 4</div>
-            <img src="./imagem/imagem2.jpg" style="width:100%">
-            <div class="text"></div>
-          </div>
-          
-          <div class="mySlides fade">
-            <div class="numbertext">3 / 4</div>
-            <img src="imagem/imagem3.jpg" style="width:100%">
-            <div class="text"></div>
-          </div>
-
-          <div class="mySlides fade">
-            <div class="numbertext">4 / 4</div>
-            <img src="imagem/imagem4.jpg" style="width:100%">
-            <div class="text"></div>
-          </div>
-          
-          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <a class="next" onclick="plusSlides(1)">❯</a>
-          
-          </div>
-          <br>
-          
-          <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-            <span class="dot" onclick="currentSlide(4)"></span> 
-          </div>
-          </section>
-          <script>
-          let slideIndex = 1;
-          showSlides(slideIndex);
-          
-          function plusSlides(n) {
-            showSlides(slideIndex += n);
-          }
-          
-          function currentSlide(n) {
-            showSlides(slideIndex = n);
-          }
-          
-          function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) {slideIndex = 1}    
-            if (n < 1) {slideIndex = slides.length}
-            for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-            }
-            for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex-1].style.display = "block";  
-            dots[slideIndex-1].className += " active";
-          }
-          </script>
-<!--FIM -- Slideshow container -->
 
      <footer >
        
@@ -400,6 +502,7 @@
  <!--pagina -->
     <!--java -->
 
+    <script src="js/script.js"></script>
 
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 <script>
@@ -408,12 +511,15 @@
 
 
 
+    
     <script src="https://kit.fontawesome.com/7454a8b3ff.js" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/7454a8b3ff.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  
+    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>

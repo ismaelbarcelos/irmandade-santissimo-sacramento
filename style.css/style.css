@@ -3,68 +3,320 @@
   padding: 0;
  }
  body{
-  background-color: rgb(246, 246, 246);
+    background-color: rgb(246, 246, 246);
 }
-#main{
   
-  background:linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("../imagem/menuback.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
+
+
+
+
+#main{
+  position: relative;
+ width: 100%;
+overflow: hidden;
+
+
 }
+#main::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(23, 35, 61, 0.35);
+}
+
+#main img{
+   width: 100%;
+   
+       object-fit: cover;
+}
+
+
+
+
+
+
+#border_onda{
+  background-color:  rgb(246, 246, 246);
+  width: 100%;
+  height: 40px;
+  margin-top: -10px;
+ 
+ 
+}
+  
+.onda{
+    position: relative;
+    margin-top: -35px;
+    height: 45px;
+   
+}
+
+.onda svg{
+    display: block;
+    width: 100%;
+    height: 35px;
+    
+}
+
+.topo{
+    background:#beb8b8;
+}
+
+.onda-topo{
+    width:100%;
+    height:80px;
+    display:block;
+}
+
+
 /* menu */
 
+#nav_group{
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+
+   background-color: #ffffff24;
+box-shadow: 0 2px 15px rgba(0, 0, 0, 0.122);
+    
+
+    z-index: 1000;
+}
+
+#nav_group a{
+  color:#1F2A44 ;
+  font-weight: 600;
+  display: inline;
+ margin-top: 350px;
+}
+#nav_group a:hover{
+  border-bottom:2px solid #D4AF37;
+  color: #e6e0e0;
+}
+#logo_img{
+  width: 100px;
+margin-left:15px;
+
+}
+#area_logo{
+  display: flex;
+  text-align:left;
+    
+}
+#area_logo div{
+margin-top: 10px;
+  margin-left: 15px;
+  color: #1F2A44;
+  font-weight: 500;
+  
+}
+#cross_logo{
+  width: 40px;
+  margin-left: 10px; 
+}
+
+ .hamburguer_menu button{
+  color: #919ba8;
+  background-color: #1F2A44;
+
+ }
+ .navbar button{
+margin-left:auto;
+margin-top:-90px;
+}
+
+.navbar{
+  text-align: right;
+  margin-right: 15px;
+}
+
+ 
  /* fim menu */
 
 
-/* apresentação */
+/* nossa historia*/
+
+.traço_historia{
+  width: 100px;
+  height: 1px;
+  background-color: #D4AF37;
+  margin-top: 10px;
+}
+.linhas_historia{
+ display: flex;
+ 
+ margin-bottom: -40px;
+  gap:10px;
+}
+.linha_do_tempo{
+ display: flex;
+ justify-content: center;
+ margin-bottom: -40px;
+  gap:10px;
+}
+
+
 #apresentação{
-  
-  margin: 1px 1px 0px 1px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+
+  position: absolute;
+  top: 35%;
+  left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
   
 }
-#apresentação{
-  
-  align-self: flex-end;
+#apresentação_textos{
+    margin-top: 120px;
+   
+
 }
+
 #apresentação h2 {
+  
   text-align: center;
   margin-bottom: 25px;
   font-family: 'Times New Roman', Times, serif;
 }
 
 #apresentação button{
-  border:1px solid  #D4AF37;
+  
+  background-color: #D4AF37;
   align-self: center;
-  border-radius: 0px;
+  border-radius: 8px;
   display: flex;
+  font-size: 18px;
 }
 
-#apresentação button:hover{
-background:#D4AF37;
-color: black;
-}
+
 
 #apresentação a{
   text-decoration: none;
-    color:  #D4AF37;
+    color:  white;
 }
-#apresentação a:hover{
-  color: black;
+#apresentação button:hover{
+box-shadow: 0px 0px 1px 1px whitesmoke;
+}
+
+/* nossa historia e linha do tempo*/
+
+#Anconrasobre{
+  background-color: #fff6e16e;
+}
+
+#card_linha_do_tempo{
+  margin-top: -13px;
+  padding-top: 90px;
+  padding-bottom: 30px;
+ 
+
+}
+.timeline {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    position: relative;
+    gap: 20px;
+    margin: 80px 0;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+/* Linha horizontal */
+.timeline::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 10%;
+    width: 80%;
+    height: 4px;
+    background: #c9a227;
+}
+
+.evento {
+    text-align: center;
+    position: relative;
+}
+.evento img{
+  position: relative;
+}
+
+.ponto {
+    width: 17px;
+    height: 17px;
+    background: #c9a227;
+    border-radius: 50%;
+    margin: 14px auto 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.ano{
+font-weight: bold;
+margin-top: 10px;
+font-size: 1.1rem;
+color: #1F2A44;
+}
+.resumo{
+  font-weight: 400;
+  font-size: 1.1rem;
+  
+}
+
+@media (max-width: 768px) {
+    .timeline {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        
+    top: 20px;
+    left: 44px;
+    width: 4px;
+    height: 960px;
+    }
+
+    .evento {
+        margin-bottom: 20px;
+    }
+    .ponto{
+      position: absolute;
+      margin-left: 37px;
+    }
+}
+
+/*nossa historia */
+#nossa_historia{
+  margin-top: -8px;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+#nossa_historia img{
+  
+  border-radius:5px;
+  margin: 15px;
+  box-shadow: 0px 0px 5000px #ffffff;
+}
+
+#texto_historia{
+ 
+  margin-left: 50px;
+
 }
 
 
-#arrow {
-  font-size: 40px;
-  width: 90px;
-  margin-left: 78px;
-  margin-top: 350px;
-    color:  #D4AF37;
-}
+
+@media (max-width: 568px) { 
+  #nossa_historia img {
+   width: 420px;  
+  }
+  #texto_historia p{
+    margin-left: -40px;
+    margin-right: 110px;
+   
+  }
+ }
+/*fim nossa historia e linha do tempo*/
 
 #galeria{
   text-align: center;
@@ -90,32 +342,86 @@ color: black;
   color:black;
 }
 
+.palavra{
+ font-size:25px ;
+}
 
-.palavras{
-font-size: 1rem;
-font-weight: 300;
- color: #D4AF37;
+.Santissimo_margin{
+  margin-top: -30px;
 }
 .sacramento{
-  font-size: 4rem;
-   color:  #D4AF37;
+  font-size: 5rem;
+   color:  #ffffff;
+   font-weight: 200;
+   
+}
+.sacramento_margin{
+  margin-top: -40px;
+
 }
 .Airmandade{
-  font-size: 4em;
-  color: white;
+  font-size: 3em;
+  color:#D4AF37;
 }
+
 #apresentação p {
   text-align: center;
   color: white;
   margin-top: 25px;
-  font-size: 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
 }
+
+.palavras_linhas{
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+}
+.icon_fe{
+margin-top: 9px;
+  color:#D4AF37 ;
+  font-size: 11px;
+
+}
+.traço_fe{
+  width: 50px;
+  height: 1px;
+  background-color: #D4AF37;
+  margin-top: 9px;
+}
+
+.traço_grande{
+  margin-bottom: 70px;
+  width: 170px;
+  height: 1px;
+ background-color: #D4AF37;
+}
+.icon_meio{
+  margin-bottom: 70px;
+  color:#D4AF37 ;
+  font-size: 13px;
+}
+
+@media (min-width:1500px) {
+ .sacramento{
+  font-size: 6rem;
+ }
+.Airmandade{
+  font-size: 6rem;
+}
+  }
+
+
+
+
 #sectionSobre{
   
   margin-top: 150px;
   text-align: center;
   
 }
+
 #nossa{
   color:#994705;
   font-weight:250;
@@ -141,21 +447,91 @@ font-weight: 300;
 
 .igreja img{
   margin-bottom: 15px;
+border-radius: 9px;  
+}
+.igreja{
+  padding: 5px;
+  padding-top: 15px;
+  box-shadow: 0px 0px 1px #f5b87c;
+
+}
+
+/*nossa Misão  */
+#nossa_missao{
+  position: relative;
+  width: 100%;
+  display: block;
+  
+}
+
+#nossa_missao img{
+width: 100%;
+height: 1005;
+display: flex;
+}
+
+#missao_conteudo{
+  margin-top: 130px;
+  margin-left: 130px;
+   position: absolute;
+    top: 10%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+
+    color: white;
+    text-align: center;
+   
+}
+#missao_conteudo h2{
+  color: #ffffff;
+  font-weight: 400;
 }
 
 
-/* a eucaristia mesagem*/ 
 
-.mensagem{
-  border-left: 3px solid #994705;
-  background: rgba(248, 247, 247, 0.795);
- margin-bottom: 25px;
+#nossa_missaoIMG::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    
+}
+#missao_frase{
+  margin-top: -70px;
+  
+}
+
+.aspas_grande{
+  font-size: 50px;
+  margin: 5px;
+ color: #D4AF37; 
+
 }
 
 
-/*fim eucaristia mesagem*/ 
+@media (max-width: 768px) { 
+#nossa_missaoIMG img{
 
-/*quadros*/
+ height: 250px;
+}
+.aspas_grande{
+  font-size: 40px;
+}
+#missao_conteudo p{
+  margin: -1px;
+ font-size: 15px;
+  
+
+   
+}
+#missao_conteudo{
+  margin-top: 110px;
+   margin-left: 50px;
+}
+ }
+
+/*Fim nossa missão */
+
+/*CARDS 3*/
 #quadros{
 
   margin-top: 130px;
@@ -172,26 +548,7 @@ font-weight: 300;
 }
 
 
-/* animação  ARROW*/
 
-
-.animar{
-  opacity: 0;
-  transform: translateY(-40px);
-  animation: animar 1.5s infinite;
-}
-
-@keyframes animar {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-
-
-
-/* animação */
 
 
 
@@ -202,8 +559,6 @@ i{
 
 .cards i {
   font-size: 35px;
-  background: #dfd3ae;
-  border-radius: 50%;
   width: 50px;
   height: 50px;
 }
@@ -211,9 +566,11 @@ i{
 
 
 
+@media (max-width: 568px) { 
+
+ }
 
 
-/* fim apresentação */
 
 
 
@@ -302,11 +659,25 @@ footer img{
     width: 450px;
 
   }
+ 
+  .nav-toggler{   
+    background-color: #994705;
+   display: flex;
+   border:1px solid red;
+   
+  }
+
+ 
+ 
   .Igreja{
     margin-top: 1px;
   }
+
 }
 @media(min-width:868px){
+
+
+
  #texto-section p{
   width: 900px;
  }
