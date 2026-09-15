@@ -59,3 +59,25 @@ if(backAtivo){
 
 
 
+// ligth box 
+
+const imagens = document.querySelectorAll("#fotos_antiga img");
+const lightbox = document.getElementById("lightbox");
+const imagemLightbox = document.getElementById("imagemLightbox");
+const fechar = document.querySelector(".fechar");
+
+imagens.forEach(imagem => {
+
+    imagem.addEventListener("click", () => {
+
+        imagemLightbox.src = imagem.src;
+        imagemLightbox.alt = imagem.alt;
+
+        lightbox.style.display = "flex";
+    });
+
+});
+
+fechar.addEventListener("click", () => {
+    lightbox.style.display = "none";
+});

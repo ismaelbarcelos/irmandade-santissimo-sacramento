@@ -7,7 +7,10 @@
 }
   
 
-
+.font{
+   font-family: 'Times New Roman', Times, serif;
+   font-weight: 400;
+}
 
 
 #main{
@@ -318,6 +321,83 @@ color: #1F2A44;
  }
 /*fim nossa historia e linha do tempo*/
 
+
+/*Fotos antigas*/
+#section_antiga{
+  margin-top: 90px;
+}
+
+.traço_memoria{
+  width: 175px;
+  height: 1px;
+  background-color: #D4AF37;
+  margin-top: 10px;
+}
+
+#fotos_antiga{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+  max-width: 1100px;
+  margin: 40px auto;
+  
+}
+
+#fotos_antiga img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+
+    transition: transform 0.3s ease;
+}
+
+#fotos_antiga img:hover {
+    transform: scale(1.03);
+}
+
+/*light box */
+.lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 2000;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+}
+
+.fechar {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/*fim light box*/
+
+
+@media (max-width: 568px) { 
+  #fotos_antiga{
+    grid-template-columns: repeat(1,1fr);
+  }
+ }
+
+/*fim fotos antigas*/
+
+
+
 #galeria{
   text-align: center;
   margin-bottom: 20px;
@@ -466,8 +546,6 @@ border-radius: 9px;
 
 #nossa_missao img{
 width: 100%;
-height: 1005;
-display: flex;
 }
 
 #missao_conteudo{
@@ -530,6 +608,14 @@ display: flex;
  }
 
 /*Fim nossa missão */
+
+/*nossas ativiades*/
+#nossas_atividades{
+  margin-top: 90px;
+  text-align: center;
+}
+/* fim nossas ativiades*/
+
 
 /*CARDS 3*/
 #quadros{
